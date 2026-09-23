@@ -22,13 +22,12 @@ function tjekGratisService(brand, year) {
     // Ellers:
     //   - sæt harGratisService til false
     //   - log `${brand} fra ${year} får ikke gratis service.`
-
 }
 
 tjekGratisService(`Volkswagen`, 2024);
 tjekGratisService(`Skoda`, 2020);
 tjekGratisService(`Tesla`, 2025);
-
+tjekGratisService(`citroen`, 2022);
 // Prøv selv (efter du har løst opgaven): ret "let harGratisService" til "const harGratisService"
 // ovenfor, og kør koden igen. Se hvilken fejl du får i konsollen, og hvorfor - genkender du
 // situationen fra klasseøvelsen? Ret den tilbage til "let", når du har set fejlen.
