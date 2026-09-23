@@ -1,3 +1,4 @@
+"use strict";
 // Husk fra dag 1: skriv "use strict" herunder
 
 
@@ -7,6 +8,13 @@ function tjekGratisService(brand, year) {
     let harGratisService = false;
 
     // Skriv if/else-strukturen selv herinde, ligesom i klasseøvelsen.
+    if ((brand === `Volkswagen` || brand === `Skoda`) && year > 2023) {
+        harGratisService = true;
+        console.log(`${brand} fra ${year} får gratis service i 1 år.`);
+    } else {
+        harGratisService = false;
+        console.log(`${brand} fra ${year} får ikke gratis service.`);
+    }
     //
     // Hvis (brand er "Volkswagen" ELLER brand er "Skoda") OG year er større end 2023, så:
     //   - sæt harGratisService til true
